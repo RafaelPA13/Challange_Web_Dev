@@ -1,0 +1,180 @@
+/* Define as variáveis de cores e fonte */
+:root {
+  --font-primary: 'Noto Sans', sans-serif;
+  --font-primary-color: #fafdea;
+  --color-primary: #00001b;
+  --color-bg: #fafdea;
+  --color-secondary: #0500ff;
+  --footer-bg: #00001b;
+  --title-color: #00ffff;
+  --bg-primary: linear-gradient(90deg, #00005a 0%, #0000c0 100%);
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+}
+
+a:hover {
+  color: var(--title-color);
+}
+
+/* FIM ESTILOS GERAIS */
+
+/* BUTTON */
+button {
+  border-radius: 50px;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button-light {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border: 0px solid var(--color-primary);
+}
+
+.button-dark {
+  background-color: var(--color-secondary);
+  color: var(--font-primary-color);
+  border: 0px solid var(--color-primary);
+}
+
+.button-full-width {
+  width: 100%;
+}
+
+/* FIM BUTTON */
+
+/* HELPERS */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+/* FIM HELPERS */
+
+.no-decoration-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 1em;
+  min-height: 300px;
+}
+
+.background-primary {
+  background: var(--bg-primary);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--font-primary-color);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+
+  img {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: larger;
+  }
+}
+
+footer a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--title-color);
+}
+
+footer {
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+.footer-container {
+  padding: 0 3em;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divider {
+  border-top: 1px solid var(--font-primary-color);
+  margin: 1em 0;
+  width: 100%;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 1em 0;
+  background-color: var(--color-primary);
+}
