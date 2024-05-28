@@ -25,28 +25,6 @@
     font-family: var(--fonte);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Títulos */
-.titulos {
-    height: 100px;
-    width: 100%;
-    padding: 0 50px;
-    background: linear-gradient(to right, var(--cor-azul-escuro), var(--cor-azul-claro));
-    display: flex;
-    align-items: center;
-
-    & h1 {
-        color: var(--cor-ciano);
-        font-style: italic;
-    }
-}
-/* Fim Títulos */
-
 /* Imagem do Circuito */
 .circuito {
     width: 100%;
