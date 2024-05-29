@@ -96,6 +96,11 @@ html {
 .hero img{
     gap: 10px;
     width: 120px;
+    transition: transform 2s; /* Define a transição para a transformação */
+}
+
+.hero img:hover {
+    transform: scale(1.5); /* Aumenta a escala da imagem em 1.5 vezes ao passar o mouse */
 }
 
 /* HELPERS */
@@ -117,35 +122,70 @@ html {
    /* SESSÃO 2 */
 
 .sessao_2 {
-    width: 80%;
-    padding: 120px 30px;
-    margin: 50px auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    border-radius: 7px;
+    border-radius: 10px;
+    font-family: var(--font-primary);
+    height: 100vh;
 }
 
-.sessao_2 {
-    width: 45%;
-    margin: 10px 0;
+.content {
+    height: 300PX;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 80px;
+    background: var(--bg-primary);
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--title-color);
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+.btn_2 {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border: 0px solid var(--color-primary);
+    border-radius: 50px;
+    padding: 8px 30px;
+    cursor: pointer;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
+    text-decoration: none;
+    font-weight: 600;  
 }
 
-.sessao_2 h3 {
-    font-size: clamp(18px, 2vw, 35px);
-    text-wrap: balance;
-    line-height: 1.3;
+.content {
+    height: 300PX;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 80px;
+    background: var(--bg-primary);
 }
 
-.sessao_2 p {
-    width: 90%;
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+.text-section p {
+    margin-bottom: 50px;
 }
 
 .btn_2 {
@@ -165,8 +205,30 @@ html {
     color: var(--color-secondary);
 }
 
+.image-section {
+    margin-left: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+} 
+
+.btn_2:hover {
+    color: var(--color-secondary);
+}
+
+.image-section {
+    margin-left: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
  /* FIM SESSÃO 2 */
- 
+
   /* FOOTER */
   
   footer {
