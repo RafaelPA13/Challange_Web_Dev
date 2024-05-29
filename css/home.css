@@ -146,6 +146,7 @@ html {
     font-size: 2em;
     margin-bottom: 10px;
     color: var(--title-color);
+    font-style: italic;
 }
 
 .text-section p {
