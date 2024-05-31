@@ -65,7 +65,7 @@ a:hover {
   }
 
   & h1 {
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     font-size: 30px;
     font-style: italic;
   }
