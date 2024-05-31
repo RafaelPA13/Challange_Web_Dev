@@ -245,7 +245,7 @@ const pilotos = [
 ];
 
 //Mostra a tabela completa de pilotos quando a página pe carregada
-window.addEventListener('DOMContentLoaded', mapeamento(pilotos))
+window.addEventListener("DOMContentLoaded", mapeamento(pilotos));
 
 //Permitindo pesquisar apertando enter
 const barraDePesquisa = document.getElementById("barra-pesquisa");
@@ -267,17 +267,16 @@ function buscarPiloto(corredor) {
 
 //Imprime os pilotos na tela
 function mostrarPilotos(corredor) {
-  //Apaga a tabela 
+  //Apaga a tabela
   const tabelaPilotos = document.getElementById("pilotos");
-  tabelaPilotos.innerHTML = ""
-  
+  tabelaPilotos.innerHTML = "";
+
   const dados = buscarPiloto(corredor);
   //Retorna um alerta se o piloto não for encontrado na lista
   if (dados.length == 0) {
-    alert("Piloto não encontrado")
-    mapeamento(pilotos)
-  } 
-  else {  
+    alert("Piloto não encontrado");
+    mapeamento(pilotos);
+  } else {
     mapeamento(dados);
   }
 }
@@ -286,7 +285,7 @@ function mostrarPilotos(corredor) {
 function mapeamento(lista) {
   //Elemento selecionado
   const tabelaPilotos = document.getElementById("pilotos");
-  
+
   //Mapeamento de todos os elementos da lista
   lista.forEach((piloto) => {
     //Elementos criados
