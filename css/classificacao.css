@@ -18,6 +18,7 @@
     width: 100%;
     height: 824px;
 }
+
 /* Fim Imagem do Circuito */
 
 /* Tabela */
@@ -75,7 +76,7 @@ tbody {
         text-align: center;
     }
 
-    .bordas-equipes{
+    .bordas-equipes {
         border-left: 10px solid;
     }
 
@@ -128,6 +129,7 @@ tbody {
     & .ert {
         border-left-color: var(--cor-ert);
     }
+
     /* Fim Cores das Equipes */
 
     & .piloto {
@@ -157,4 +159,5 @@ tbody {
         font-size: 35px;
     }
 }
+
 /* Fim  Tabela */
