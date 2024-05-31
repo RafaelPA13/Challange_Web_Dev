@@ -11,6 +11,12 @@
   --bg-primary: linear-gradient(90deg, #00005a 0%, #0000c0 100%);
 }
 
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+
 /* Reset básico */
 * {
   margin: 0;
