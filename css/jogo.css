@@ -7,7 +7,7 @@ main {
 /* Formulário */
 form {
     width: 90%;
-    margin: 26.5px;
+    margin: 41.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@ form {
 
 .categorias {
     width: 33%;
-    height: 90%;
+    height: 100%;
     background-color: var(--color-primary);
     padding: 50px 35px;
     display: flex;
