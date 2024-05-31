@@ -96,11 +96,11 @@ html {
 .hero img{
     gap: 10px;
     width: 120px;
-    transition: transform 2s; /* Define a transição para a transformação */
+    transition: transform 2s; 
 }
 
 .hero img:hover {
-    transform: scale(1.5); /* Aumenta a escala da imagem em 1.5 vezes ao passar o mouse */
+    transform: scale(1.5); 
 }
 
 /* HELPERS */
@@ -130,7 +130,7 @@ html {
 }
 
 .content {
-    height: 300PX;
+    height: 300px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -140,6 +140,12 @@ html {
 
 .text-section {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 05px;
+    text-align: left;
 }
 
 .text-section h2 {
@@ -153,6 +159,7 @@ html {
 }
 
 .btn_2 {
+    width: 25%;
     background-color: var(--color-bg);
     color: var(--color-primary);
     border: 0px solid var(--color-primary);
@@ -163,42 +170,6 @@ html {
     justify-content: center;
     text-decoration: none;
     font-weight: 600;  
-}
-
-.content {
-    height: 300PX;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 80px;
-    background: var(--bg-primary);
-}
-
-.text-section {
-    max-width: 50%;
-}
-
-.text-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: var(--title-color);
-}
-
-.text-section p {
-    margin-bottom: 50px;
-}
-
-.btn_2 {
-    background-color: var(--color-bg);
-    color: var(--color-primary);
-    border: 0px solid var(--color-primary);
-    border-radius: 50px;
-    padding: 8px 30px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .btn_2:hover {
@@ -213,19 +184,6 @@ html {
     max-width: 100%;
     border-radius: 10px;
 } 
-
-.btn_2:hover {
-    color: var(--color-secondary);
-}
-
-.image-section {
-    margin-left: 20px;
-}
-
-.image-section img {
-    max-width: 100%;
-    border-radius: 10px;
-}
 
  /* FIM SESSÃO 2 */
 
