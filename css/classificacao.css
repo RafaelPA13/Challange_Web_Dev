@@ -1,8 +1,4 @@
 :root {
-    --cor-azul-escuro: #00005A;
-    --cor-azul-claro: #0000C0;
-    --cor-ciano: #00FFFF;
-    --cor-branca: #F2F2F2;
     --cor-cinza: #A5A5A5;
     --cor-porsche: #D5001C;
     --cor-jaguar: #000;
@@ -15,14 +11,6 @@
     --cor-abt: #194997;
     --cor-envision: #00BE26;
     --cor-ert: #3C3C3C;
-    --fonte: 'Noto Sans', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte);
 }
 
 /* Imagem do Circuito */
@@ -33,7 +21,7 @@
 /* Fim Imagem do Circuito */
 
 /* Tabela */
-table {
+.tabela-pilotos {
     width: 90%;
     margin: 1rem auto;
     border-collapse: collapse;
@@ -42,9 +30,9 @@ table {
 
 thead {
     & tr {
-        background-color: var(--cor-azul-escuro);
-        border: 1px solid var(--cor-azul-escuro);
-        color: var(--cor-ciano);
+        background-color: var(--color-tertiary);
+        border: 1px solid var(--color-tertiary);
+        color: var(--title-color);
         font-weight: bold;
     }
 
@@ -76,8 +64,8 @@ thead {
 tbody {
     & tr {
         height: 100px;
-        background-color: var(--cor-branca);
-        color: var(--cor-azul-escuro);
+        background-color: var(--color-bg);
+        color: var(--color-tertiary);
         font-weight: bold;
         border: 1px solid var(--cor-cinza);
     }
@@ -87,6 +75,10 @@ tbody {
         text-align: center;
     }
 
+    .bordas-equipes{
+        border-left: 10px solid;
+    }
+
     & .posicao,
     .pontos {
         font-size: 50px;
@@ -94,47 +86,47 @@ tbody {
 
     /* Cores das Equipes */
     & .porsche {
-        border-left: 10px solid var(--cor-porsche);
+        border-left-color: var(--cor-porsche);
     }
 
     & .jaguar {
-        border-left: 10px solid var(--cor-jaguar);
+        border-left-color: var(--cor-jaguar);
     }
 
     & .nissan {
-        border-left: 10px solid var(--cor-nissan);
+        border-left-color: var(--cor-nissan);
     }
 
     & .mclaren {
-        border-left: 10px solid var(--cor-mclaren);
+        border-left-color: var(--cor-mclaren);
     }
 
     & .maseratti {
-        border-left: 10px solid var(--cor-maseratti);
+        border-left-color: var(--cor-maseratti);
     }
 
     & .andretti {
-        border-left: 10px solid var(--cor-andretti);
+        border-left-color: var(--cor-andretti);
     }
 
     & .mahindra {
-        border-left: 10px solid var(--cor-mahindra);
+        border-left-color: var(--cor-mahindra);
     }
 
     & .ds-penske {
-        border-left: 10px solid var(--cor-ds-penske);
+        border-left-color: var(--cor-ds-penske);
     }
 
     & .abt {
-        border-left: 10px solid var(--cor-abt);
+        border-left-color: var(--cor-abt);
     }
 
     & .envision {
-        border-left: 10px solid var(--cor-envision);
+        border-left-color: var(--cor-envision);
     }
 
     & .ert {
-        border-left: 10px solid var(--cor-ert);
+        border-left-color: var(--cor-ert);
     }
     /* Fim Cores das Equipes */
 

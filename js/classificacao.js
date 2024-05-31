@@ -259,7 +259,7 @@ barraDePesquisa.addEventListener("keyup", (e) => {
 //Filtragem de pilotos
 function buscarPiloto(corredor) {
   const dados = pilotos.filter((piloto) => {
-    return piloto.nome == corredor;
+    return piloto.nome.toLowerCase().includes(corredor.toLowerCase());
   });
 
   return dados;
@@ -268,8 +268,8 @@ function buscarPiloto(corredor) {
 //Imprime os pilotos na tela
 function mostrarPilotos(corredor) {
   //Apaga a tabela 
-  const tbody = document.getElementById("tbody");
-  tbody.innerHTML = ""
+  const tabelaPilotos = document.getElementById("pilotos");
+  tabelaPilotos.innerHTML = ""
   
   const dados = buscarPiloto(corredor);
   //Retorna um alerta se o piloto não for encontrado na lista
@@ -285,7 +285,7 @@ function mostrarPilotos(corredor) {
 //Mapeia a lista que for retornada
 function mapeamento(lista) {
   //Elemento selecionado
-  const tbody = document.getElementById("tbody");
+  const tabelaPilotos = document.getElementById("pilotos");
   
   //Mapeamento de todos os elementos da lista
   lista.forEach((piloto) => {
@@ -295,7 +295,7 @@ function mapeamento(lista) {
     //Estrutura da tag
     tr.innerHTML = `
                 <td class="posicao">${piloto.posicao}</td>
-                <td class="piloto ${piloto.classe}">
+                <td class="piloto bordas-equipes ${piloto.classe}">
                     <img class="foto-piloto" src=${piloto.fotoPiloto} alt=${piloto.nome}>
                     <h2>${piloto.nome}</h2>
                     <img class="foto-equipe" src="${piloto.equipe}" alt="Equipe">
@@ -305,6 +305,6 @@ function mapeamento(lista) {
                 <td class="diferenca">${piloto.diferenca}</td>
                 <td class="pontos">${piloto.pontos}</td>
                 `;
-    tbody.appendChild(tr);
+    tabelaPilotos.appendChild(tr);
   });
 }
