@@ -21,6 +21,12 @@
 
 /* Fim Imagem do Circuito */
 
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
 /* Tabela */
 .tabela-pilotos {
   width: 90%;
@@ -161,3 +167,15 @@ tbody {
 }
 
 /* Fim  Tabela */
+
+
+/* Mobile */ 
+@media only screen and (max-width: 950px) {
+  .section-header {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+  
+}
