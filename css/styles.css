@@ -30,6 +30,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -123,7 +124,7 @@ a:hover {
 /* Fim Inputs*/
 
 /* BUTTON */
-button {
+.button {
   border-radius: 50px;
   padding: 0.5em 2em;
   cursor: pointer;
@@ -170,17 +171,6 @@ button {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.container {
-  display: flex;
-  flex-grow: 1;
-}
-
-.content {
-  flex: 1;
-  padding: 1em;
-  min-height: 300px;
 }
 
 .background-primary {
