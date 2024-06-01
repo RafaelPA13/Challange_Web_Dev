@@ -1,164 +1,163 @@
 :root {
-    --cor-cinza: #A5A5A5;
-    --cor-porsche: #D5001C;
-    --cor-jaguar: #000;
-    --cor-nissan: #C3002F;
-    --cor-mclaren: #FF8000;
-    --cor-maseratti: #001489;
-    --cor-andretti: #ED3124;
-    --cor-mahindra: #DD052B;
-    --cor-ds-penske: #CBA65F;
-    --cor-abt: #194997;
-    --cor-envision: #00BE26;
-    --cor-ert: #3C3C3C;
+  --cor-cinza: #a5a5a5;
+  --cor-porsche: #d5001c;
+  --cor-jaguar: #000;
+  --cor-nissan: #c3002f;
+  --cor-mclaren: #ff8000;
+  --cor-maseratti: #001489;
+  --cor-andretti: #ed3124;
+  --cor-mahindra: #dd052b;
+  --cor-ds-penske: #cba65f;
+  --cor-abt: #194997;
+  --cor-envision: #00be26;
+  --cor-ert: #3c3c3c;
 }
 
 /* Imagem do Circuito */
 .circuito {
-    width: 100%;
-    object-fit: fill;
+  width: 100%;
+  object-fit: fill;
 }
 
 /* Fim Imagem do Circuito */
 
 /* Tabela */
 .tabela-pilotos {
-    width: 90%;
-    margin: 1rem auto;
-    border-collapse: collapse;
-
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
 }
 
 thead {
-    & tr {
-        background-color: var(--color-tertiary);
-        border: 1px solid var(--color-tertiary);
-        color: var(--title-color);
-        font-weight: bold;
-    }
+  & tr {
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-tertiary);
+    color: var(--title-color);
+    font-weight: bold;
+  }
 
-    & .posicao {
-        width: 80px;
-    }
+  & .posicao {
+    width: 80px;
+  }
 
-    & .piloto {
-        width: 570px;
-    }
+  & .piloto {
+    width: 570px;
+  }
 
-    & .largada {
-        width: 100px;
-    }
+  & .largada {
+    width: 100px;
+  }
 
-    & .melhor-tempo {
-        width: 150px;
-    }
+  & .melhor-tempo {
+    width: 150px;
+  }
 
-    & .diferenca {
-        width: 150px;
-    }
+  & .diferenca {
+    width: 150px;
+  }
 
-    & .pontos {
-        width: 150px;
-    }
+  & .pontos {
+    width: 150px;
+  }
 }
 
 tbody {
-    & tr {
-        height: 100px;
-        background-color: var(--color-bg);
-        color: var(--color-tertiary);
-        font-weight: bold;
-        border: 1px solid var(--cor-cinza);
+  & tr {
+    height: 100px;
+    background-color: var(--color-bg);
+    color: var(--color-tertiary);
+    font-weight: bold;
+    border: 1px solid var(--cor-cinza);
+  }
+
+  & td {
+    border-right: 1px solid var(--cor-cinza);
+    text-align: center;
+  }
+
+  .bordas-equipes {
+    border-left: 10px solid;
+  }
+
+  & .posicao,
+  .pontos {
+    font-size: 50px;
+  }
+
+  /* Cores das Equipes */
+  & .porsche {
+    border-left-color: var(--cor-porsche);
+  }
+
+  & .jaguar {
+    border-left-color: var(--cor-jaguar);
+  }
+
+  & .nissan {
+    border-left-color: var(--cor-nissan);
+  }
+
+  & .mclaren {
+    border-left-color: var(--cor-mclaren);
+  }
+
+  & .maseratti {
+    border-left-color: var(--cor-maseratti);
+  }
+
+  & .andretti {
+    border-left-color: var(--cor-andretti);
+  }
+
+  & .mahindra {
+    border-left-color: var(--cor-mahindra);
+  }
+
+  & .ds-penske {
+    border-left-color: var(--cor-ds-penske);
+  }
+
+  & .abt {
+    border-left-color: var(--cor-abt);
+  }
+
+  & .envision {
+    border-left-color: var(--cor-envision);
+  }
+
+  & .ert {
+    border-left-color: var(--cor-ert);
+  }
+
+  /* Fim Cores das Equipes */
+
+  & .piloto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & .foto-piloto {
+      height: 100px;
     }
 
-    & td {
-        border-right: 1px solid var(--cor-cinza);
-        text-align: center;
+    & h2 {
+      width: 33%;
+      color: var(--color-tertiary);
     }
 
-    .bordas-equipes {
-        border-left: 10px solid;
+    & {
+      .foto-equipe {
+        max-height: 75px;
+        width: 110px;
+      }
     }
+  }
 
-    & .posicao,
-    .pontos {
-        font-size: 50px;
-    }
-
-    /* Cores das Equipes */
-    & .porsche {
-        border-left-color: var(--cor-porsche);
-    }
-
-    & .jaguar {
-        border-left-color: var(--cor-jaguar);
-    }
-
-    & .nissan {
-        border-left-color: var(--cor-nissan);
-    }
-
-    & .mclaren {
-        border-left-color: var(--cor-mclaren);
-    }
-
-    & .maseratti {
-        border-left-color: var(--cor-maseratti);
-    }
-
-    & .andretti {
-        border-left-color: var(--cor-andretti);
-    }
-
-    & .mahindra {
-        border-left-color: var(--cor-mahindra);
-    }
-
-    & .ds-penske {
-        border-left-color: var(--cor-ds-penske);
-    }
-
-    & .abt {
-        border-left-color: var(--cor-abt);
-    }
-
-    & .envision {
-        border-left-color: var(--cor-envision);
-    }
-
-    & .ert {
-        border-left-color: var(--cor-ert);
-    }
-
-    /* Fim Cores das Equipes */
-
-    & .piloto {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        & .foto-piloto {
-            height: 100px;
-        }
-
-        & h2 {
-            width: 33%;
-            color: var(--color-tertiary);
-        }
-
-        & {
-            .foto-equipe {
-                max-height: 75px;
-                width: 110px;
-            }
-        }
-    }
-
-    & .largada,
-    .melhor-tempo,
-    .diferenca {
-        font-size: 35px;
-    }
+  & .largada,
+  .melhor-tempo,
+  .diferenca {
+    font-size: 35px;
+  }
 }
 
 /* Fim  Tabela */
