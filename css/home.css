@@ -212,6 +212,42 @@ li {
   }
 }
 
+/* Fim da Sessao Circuito de Berlim */
+
+/* Sessao Acompanhe as corridas */
+
+.section-acompanhar-corridas {
+  background-image: url(../img/Web/Imagem-Home-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40%;
+
+  .content-corridas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 2rem;
+
+    p {
+      font-size: large;
+    }
+
+    .button {
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .content-corridas {
+      width: 40%;
+    }
+  }
+}
+
+/* Fim Sessao Acompanhe as corridas */
+
+
 /* Mobile */
 @media only screen and (max-width: 1200px) {
   .section-container {
