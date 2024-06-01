@@ -1,17 +1,3 @@
-:root {
-  --cor-cinza: #a5a5a5;
-  --cor-porsche: #d5001c;
-  --cor-jaguar: #000;
-  --cor-nissan: #c3002f;
-  --cor-mclaren: #ff8000;
-  --cor-maseratti: #001489;
-  --cor-andretti: #ed3124;
-  --cor-mahindra: #dd052b;
-  --cor-ds-penske: #cba65f;
-  --cor-abt: #194997;
-  --cor-envision: #00be26;
-  --cor-ert: #3c3c3c;
-}
 
 /* Imagem do Circuito */
 .circuito {
