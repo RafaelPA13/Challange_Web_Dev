@@ -151,17 +151,25 @@ li {
 
 /* Cards */
 .accordion {
-  max-width: 800px;
+  max-width: 80rem;
 }
 
 .content-box {
   position: relative;
-  margin: 10px 20px;
+  margin: 1rem 2rem;
+  overflow: hidden;
+}
+
+.content-box.active {
+  & .label-content {
+    height: auto;
+    padding: 1rem;
+  }
 }
 
 .label {
   position: relative;
-  padding: 10px;
+  padding: 1rem;
   background: #000;
   cursor: pointer;
 }
@@ -170,22 +178,21 @@ li {
   content: '+';
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 2rem;
   transform: translateY(-50%);
   font-size: 1.5em;
+  padding: 1rem;
 }
 
 .label-content {
   position: relative;
-  padding: 10px;
-  background: var(--color-bg);
+  background: var(--color-secondary);
   height: 0;
-  overflow: hidden;
   transition: 0.5s;
   overflow-y: auto;
 }
-
 /* Fim dos Cards */
+
 
 /* Mobile */
 @media only screen and (max-width: 950px) {
