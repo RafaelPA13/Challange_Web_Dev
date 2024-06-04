@@ -149,6 +149,44 @@ li {
   }
 }
 
+/* Cards */
+.accordion {
+  max-width: 800px;
+}
+
+.content-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.label {
+  position: relative;
+  padding: 10px;
+  background: #000;
+  cursor: pointer;
+}
+
+.label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.label-content {
+  position: relative;
+  padding: 10px;
+  background: var(--color-bg);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+/* Fim dos Cards */
+
 /* Mobile */
 @media only screen and (max-width: 950px) {
   & .content-wrapper {
