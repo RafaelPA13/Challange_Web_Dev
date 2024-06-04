@@ -259,3 +259,18 @@ footer {
   padding: 1em 0;
   background-color: var(--color-primary);
 }
+
+@media only screen and (max-width: 550px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu {
+    margin-bottom: 1em;
+  }
+
+  .footer-content img {
+    width: 200px;
+  }
+}

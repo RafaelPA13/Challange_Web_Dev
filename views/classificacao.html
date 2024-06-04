@@ -37,28 +37,34 @@
         src="../img/Circuitos/Circuito-Berlim.webp"
         alt="Circuito"
       />
-      <div class="header">
-        <h1>Classificação</h1>
-        <div class="input">
-          <div class="icone">
-            <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="content">
+        <div class="header section-header">
+          <h1>Classificação</h1>
+          <div class="input">
+            <div class="icone">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input
+              type="text"
+              id="barra-pesquisa"
+              placeholder="Buscar Piloto:"
+            />
           </div>
-          <input type="text" id="barra-pesquisa" placeholder="Buscar Piloto:" />
         </div>
+        <table class="tabela-pilotos">
+          <thead>
+            <tr>
+              <th class="posicao">Posição</th>
+              <th class="piloto">Piloto</th>
+              <th class="largada">Largada</th>
+              <th class="melhor-tempo">Melhor Tempo</th>
+              <th class="diferenca">Diferença</th>
+              <th class="pontos">Pontos</th>
+            </tr>
+          </thead>
+          <tbody id="pilotos"></tbody>
+        </table>
       </div>
-      <table class="tabela-pilotos">
-        <thead>
-          <tr>
-            <th class="posicao">Posição</th>
-            <th class="piloto">Piloto</th>
-            <th class="largada">Largada</th>
-            <th class="melhor-tempo">Melhor Tempo</th>
-            <th class="diferenca">Diferença</th>
-            <th class="pontos">Pontos</th>
-          </tr>
-        </thead>
-        <tbody id="pilotos"></tbody>
-      </table>
     </main>
     <footer>
       <div class="footer-container">
