@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formula E</title>
+    <!-- Importe de CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/classificacao.css" />
+    <!-- Importe de Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Importe de icones -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,58 +24,42 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="bg">
-        <header class="header-page">
-          <div class="logo-home">
-            <img src="../img/Web/Logo-Formula-E.png" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="">Wiki</a></li>
-              <li><a href="">Classificação</a></li>
-              <li><a href="">Jogos</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        <section class="hero">
-          <h2>Bem vindo a Fórmula E</h2>
-          <a href="" class="button button-dark">ENTRAR</a>
-          <a href="#scroll-target">
-            <img src="../img/setas.png" alt="Seta para baixo" />
-          </a>
-        </section>
+    <header class="header">
+      <a href="#"><i class="fa-solid fa-angles-left"></i> Voltar</a>
+      <img src="../img/Web/Logo-Formula-E.png" alt="logo" />
+    </header>
+    <main>
+      <div class="titulos">
+        <h1>Circuito: Berlim</h1>
       </div>
-
-      <div class="section-container mb-1" id="scroll-target">
-        <div class="content-wrapper">
-          <div class="content">
-            <div class="title-container">
-              <h2>A Nova Era do Automobilismo</h2>
-            </div>
-            <div class="text-container">
-              <p>
-                A Fórmula E, inaugurada em 2014, é a primeira competição mundial
-                para carros monopostos totalmente elétricos. Com o avanço da
-                tecnologia, os carros agora competem por 45 minutos com uma
-                única carga de bateria. Celebrando seu décimo aniversário, a
-                Fórmula E continua a promover a inovação e a sustentabilidade no
-                automobilismo.
-              </p>
-            </div>
-
-            <div>
-              <a href="#" class="link button button-light">Saiba mais</a>
-            </div>
+      <img
+        class="circuito"
+        src="../img/Circuitos/Circuito-Berlim.webp"
+        alt="Circuito"
+      />
+      <div class="header">
+        <h1>Classificação</h1>
+        <div class="input">
+          <div class="icone">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="image-container">
-            <img src="../img/Web/Imagem-Home-1.png" alt="Formula E Carro" />
-          </div>
+          <input type="text" id="barra-pesquisa" placeholder="Buscar Piloto:" />
         </div>
       </div>
-    </div>
-
+      <table class="tabela-pilotos">
+        <thead>
+          <tr>
+            <th class="posicao">Posição</th>
+            <th class="piloto">Piloto</th>
+            <th class="largada">Largada</th>
+            <th class="melhor-tempo">Melhor Tempo</th>
+            <th class="diferenca">Diferença</th>
+            <th class="pontos">Pontos</th>
+          </tr>
+        </thead>
+        <tbody id="pilotos"></tbody>
+      </table>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-content">
@@ -110,5 +97,7 @@
         </div>
       </div>
     </footer>
+    <!-- Importe de JS -->
+    <script src="../js/classificacao.js"></script>
   </body>
 </html>
