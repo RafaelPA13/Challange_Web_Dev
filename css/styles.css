@@ -2,6 +2,7 @@
 :root {
   --font-primary: 'Noto Sans', sans-serif;
   --font-primary-color: #fafdea;
+  --font-primary-dark-color: #00005a;
   --color-primary: #00001b;
   --color-bg: #fafdea;
   --color-secondary: #0500ff;
@@ -9,6 +10,19 @@
   --footer-bg: #00001b;
   --title-color: #00ffff;
   --bg-primary: linear-gradient(90deg, #00005a 0%, #0000c0 100%);
+  /* Cores de equipes */
+  --cor-cinza: #a5a5a5; /* Neutra */
+  --cor-porsche: #d5001c;
+  --cor-jaguar: #000;
+  --cor-nissan: #c3002f;
+  --cor-mclaren: #ff8000;
+  --cor-maseratti: #001489;
+  --cor-andretti: #ed3124;
+  --cor-mahindra: #dd052b;
+  --cor-ds-penske: #cba65f;
+  --cor-abt: #194997;
+  --cor-envision: #00be26;
+  --cor-ert: #3c3c3c;
 }
 
 h1,
@@ -165,6 +179,12 @@ a:hover {
   margin-bottom: 2em;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* FIM HELPERS */
 
 .no-decoration-list {
@@ -262,3 +282,57 @@ footer {
     width: 200px;
   }
 }
+
+/* FIM FOOTER */
+
+/* Cores das Equipes */
+
+.bg-cinza {
+  background-color: var(--cor-cinza);
+}
+
+.bg-porsche {
+  background-color: var(--cor-porsche);
+}
+
+.bg-jaguar {
+  background-color: var(--cor-jaguar);
+}
+
+.bg-nissan {
+  background-color: var(--cor-nissan);
+}
+
+.bg-mclaren {
+  background-color: var(--cor-mclaren);
+}
+
+.bg-maseratti {
+  background-color: var(--cor-maseratti);
+}
+
+.bg-andretti {
+  background-color: var(--cor-andretti);
+}
+
+.bg-mahindra {
+  background-color: var(--cor-mahindra);
+}
+
+.bg-ds-penske {
+  background-color: var(--cor-ds-penske);
+}
+
+.bg-abt {
+  background-color: var(--cor-abt);
+}
+
+.bg-envision {
+  background-color: var(--cor-envision);
+}
+
+.bg-ert {
+  background-color: var(--cor-ert);
+}
+
+/* Fim Cores das Equipes */
