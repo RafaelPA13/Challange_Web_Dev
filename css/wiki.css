@@ -66,7 +66,24 @@
     }
   }
 
-  @media only screen and (max-width: 1200px) {
+  /* Mobile */
+@media only screen and (max-width: 1200px) {
+    .section-container {
+      height: auto;
+      margin-bottom: 2rem;
+      
+    }
+    .content-wrapper {
+      height: 100%;
+      flex-direction: column-reverse;
+      padding: 1rem 0 1rem;
+      align-items: start;
+    }
+  
+    .content {
+      margin-top: 15px;
+      width: 100%;
+    }
   
     .image-container {
       width: 100%;
@@ -82,4 +99,7 @@
       }
     }
   
+    .piloto-wrapper {
+      top: 0 !important;
+    }
   }
