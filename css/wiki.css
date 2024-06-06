@@ -30,12 +30,17 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
+
+    .title-container, h2 {
+        font-size: 40px;
+    }
   
     .text-container {
       padding: 40px 0 40px;
   
       p {
         width: 90%;
+        color: var(--font-primary-color);
       }
     }
   }
@@ -50,7 +55,7 @@
   
     .main-image {
       scale: 1.1;
-      height: 450px;
+      height: 390px;
       border-radius: 7px;
       box-shadow: 1px 1px 30px var(--color-shadow);
       transition: scale 0.7s;
@@ -59,4 +64,22 @@
     .main-image:hover {
       scale: 1.2;
     }
+  }
+
+  @media only screen and (max-width: 1200px) {
+  
+    .image-container {
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+      flex-grow: 0;
+      margin-top: 2rem;
+      img {
+        width: 90%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+  
   }
