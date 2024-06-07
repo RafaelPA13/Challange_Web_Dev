@@ -69,18 +69,88 @@ h2 {
     }
   }
 
-  /* Circuitos */
-  .circuit-container {
+/* Circuitos */
+.circuit-container {
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding: 3rem;
+    color: var(--color-tertiary);
+    font-size: 2rem;
+  }
+}
+
+/* Equipes */
+.teams-accordion {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0 auto; 
+
+  .teams-content-box {
+    margin: 1rem 2rem;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background-color: #f2f2f2;
+    color: #00001B;
+    cursor: pointer;
+    font-weight: 800;
+
     img {
-      width: 100%;
+      height: 50px;
     }
 
-    p {
-      padding: 3rem;
-      color: var(--color-tertiary);
-      font-size: 2rem;
+    .title-label {
+      color: #00001B;
+      margin: 0;
+      font-size: 3rem;
     }
   }
+
+  .label::before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    order: 2;
+  }
+
+  .label-content {
+    display: flex;
+    align-items: center;
+    background: var(--bg-primary);
+    color: var(--font-primary-color);
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in;
+    overflow: auto;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+
+  .teams-content-box.active {
+    .label-content{
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .label::before {
+      content: "\f077";
+    }
+  }
+}
   /* Mobile */
 @media only screen and (max-width: 1200px) {
     .section-container {
@@ -120,8 +190,30 @@ h2 {
 
     .circuit-container {
       p {
-        padding: 1rem;
+        padding: 2rem;
         color: var(--color-tertiary);
+        font-size: 1rem;
+      }
+    }
+
+    .teams-accordion {
+      width: 100%;
+
+        .label {
+          .title-label {
+            font-size: 1rem;
+          }
+        }
+
+        .label::before {
+          font-size: .7rem;
+        }
+    }
+
+
+    .teams-content-box.active {
+      .label-content {
+        padding: .5rem;
         font-size: 1rem;
       }
     }
