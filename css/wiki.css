@@ -69,6 +69,18 @@ h2 {
     }
   }
 
+  /* Circuitos */
+  .circuit-container {
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding: 3rem;
+      color: var(--color-tertiary);
+      font-size: 2rem;
+    }
+  }
   /* Mobile */
 @media only screen and (max-width: 1200px) {
     .section-container {
@@ -105,4 +117,12 @@ h2 {
     .piloto-wrapper {
       top: 0 !important;
     }
-  }
+
+    .circuit-container {
+      p {
+        padding: 1rem;
+        color: var(--color-tertiary);
+        font-size: 1rem;
+      }
+    }
+}
