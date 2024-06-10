@@ -1,7 +1,16 @@
-const accordion = document.getElementsByClassName('teams-content-box')
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionItems = document.querySelectorAll('.teams-content-box .label')
 
-for(i = 0; i < accordion.length; i++){
-    accordion[i].addEventListener('click', function() {
-        this.classList.toggle('active')
+    accordionItems.forEach(label => {
+        label.addEventListener('click', () => {
+            accordionItems.forEach(otherLabel => {
+                if (otherLabel !== label) {
+                    otherLabel.classList.remove('active')
+                }
+            })
+
+            label.classList.toggle('active')
+        })
     })
-}
+})
+

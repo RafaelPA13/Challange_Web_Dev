@@ -98,7 +98,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem;
+    gap: 10rem;
+    padding: 2rem;
     background-color: #f2f2f2;
     color: #00001B;
     cursor: pointer;
@@ -128,29 +129,29 @@ h2 {
 
   .label-content {
     display: flex;
-    align-items: center;
+    align-items: center; 
     background: var(--bg-primary);
     color: var(--font-primary-color);
-    height: 0;
     overflow: hidden;
-    transition: .5s ease-in;
-    overflow: auto;
     margin-bottom: 2rem;
     font-size: 1.3rem;
     font-weight: 200;
+    transition: .5s ease-in-out;
+    height: 0;
   }
 
-  .teams-content-box.active {
-    .label-content{
-      height: auto;
-      padding: 1rem;
-    }
-  
-    .label::before {
-      content: "\f077";
-    }
+ 
+  .label.active + .label-content {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .label:hover {
+    background-color: #d6d5d5c5;;
   }
 }
+
+
   /* Mobile */
 @media only screen and (max-width: 1200px) {
     .section-container {
@@ -198,23 +199,29 @@ h2 {
 
     .teams-accordion {
       width: 100%;
-
-        .label {
-          .title-label {
-            font-size: 1rem;
-          }
-        }
-
-        .label::before {
-          font-size: .7rem;
-        }
     }
 
-
-    .teams-content-box.active {
-      .label-content {
-        padding: .5rem;
-        font-size: 1rem;
+    .label {
+      gap: 10px !important; 
+      padding: 1rem !important;
+  
+      img {
+        height: 30px !important;
       }
+  
+      .title-label {
+        font-size: .8rem !important;
+      }
+    }
+  
+    .label::before {
+      font-weight: 200;
+      right: 1px;
+      font-size: 1rem;
+    }
+
+    .label-content {
+      margin-bottom: 2rem;
+      font-size: .9rem !important;
     }
 }
