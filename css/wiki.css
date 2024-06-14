@@ -1,3 +1,7 @@
+h2 {
+  font-style: italic;
+}
+
 .section-container {
     font-family: var(--font-primary);
     margin: auto;
@@ -48,9 +52,8 @@
   .image-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-grow: 1;
-    padding: 0 15px;
+    padding: 0 100px;
     width: 48%;
   
     .main-image {
@@ -65,6 +68,95 @@
       scale: 1.2;
     }
   }
+
+/* Circuitos */
+.circuit-container {
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding: 3rem;
+    color: var(--color-tertiary);
+    font-size: 2rem;
+  }
+}
+
+/* Equipes */
+.teams-accordion {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0 auto; 
+
+  .teams-content-box {
+    margin: 1rem 2rem;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    color: #00001B;
+    cursor: pointer;
+    font-weight: 800;
+
+    img {
+      height: 50px;
+    }
+
+    .title-label {
+      color: #00001B;
+      margin: 0;
+      font-size: 3rem;
+    }
+  }
+
+  .label::before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    order: 2;
+  }
+
+  .label-content {
+    display: flex;
+    flex-direction: column; 
+    background: var(--bg-primary);
+    color: var(--font-primary-color);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    transition: .5s ease-in-out;
+    height: 0;
+
+    li {
+      list-style: none;
+      font-weight: 300;
+      padding-bottom: 10px;
+    }
+  }
+
+ 
+  .label.active + .label-content {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .label:hover {
+    background-color: #d6d5d5c5;;
+  }
+}
+
 
   /* Mobile */
 @media only screen and (max-width: 1200px) {
@@ -102,4 +194,40 @@
     .piloto-wrapper {
       top: 0 !important;
     }
-  }
+
+    .circuit-container {
+      p {
+        padding: 2rem;
+        color: var(--color-tertiary);
+        font-size: 1rem;
+      }
+    }
+
+    .teams-accordion {
+      width: 100%;
+    }
+
+    .label {
+      gap: 10px !important; 
+      padding: 1rem !important;
+  
+      img {
+        height: 30px !important;
+      }
+  
+      .title-label {
+        font-size: .8rem !important;
+      }
+    }
+  
+    .label::before {
+      font-weight: 200;
+      right: 1px;
+      font-size: 1rem;
+    }
+
+    .label-content {
+      margin-bottom: 2rem;
+      font-size: .9rem !important;
+    }
+}
