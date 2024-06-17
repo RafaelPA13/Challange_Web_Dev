@@ -1,6 +1,6 @@
 # Challange_Web_Dev
 
-##Integrantes
+## Integrantes
 - Maria Eduarda - 558457
 - Matheus Diniz - 555683
 - Jennifer Moraes - 555488
